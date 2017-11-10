@@ -42,8 +42,12 @@ export default class Transportation
 
 	private step = () =>
 	{
+		// Let is de nieuwe var
+		// Var nooit meer gebruiken!!!! als ge wilt weten wrm, ask me, i explain
 		let transportSound: string = null
 
+
+		// Normale switch-case, zit al in ouwe JS
 		switch(this.type)
 		{
 			case TransportationType.Bike:
@@ -63,7 +67,7 @@ export default class Transportation
 				break
 		}
 
-		// hier toon ik nieuwe string waar ge variabelen kunt insteken
+		// hier toon ik nieuwe string waar ge variabelen kunt insteken, heet een string literal
 		console.log(`Moving with ${TransportationType[this.transportationType]} : ${transportSound}`)
 		console.log(`in the background we hear: ${this.geluid}`)
 	}
@@ -72,8 +76,9 @@ export default class Transportation
 	{
 		console.log("*****************************    I start breaking ***************************")
 
-		// hier toon ik de awesome await functie!
+		// hier toon ik de awesome await functionaliteit!
 		// de code hierachter stopt met uitvoeren tot de promise die waitSomeTime-function returnt, resolved.
+		// zo handig voor alle async stuff!! geen callback hell meer, gewoon ne cleane await, superhandig voor api requests
 
 		const promiseReturn: string = await efkesWachtenHe(this.speed * 20)
 

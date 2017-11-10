@@ -1,7 +1,7 @@
 
 
 import { Smell } from "enums";
-import Transportation from "./Classes/transportation";
+import Transportation from "./classes/transportation";
 
 
 export interface IHuman

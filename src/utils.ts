@@ -1,6 +1,3 @@
-import { setTimeout } from "timers";
-
-
 
 // Hier toon ik Promises
 // Een function toegekent aan variabele waitsometime met returnType Promise<string>
